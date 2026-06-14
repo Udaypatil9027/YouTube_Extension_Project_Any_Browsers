@@ -29,11 +29,7 @@
 
 ## 🚀 Installation
 
-### Method 1: Chrome Web Store (Recommended)
-
-> Coming soon! Will be available on Chrome Web Store.
-
-### Method 2: Manual Installation (Developer Mode)
+### Manual Installation (Developer Mode)
 
 1. **Download the project**
    ```bash
