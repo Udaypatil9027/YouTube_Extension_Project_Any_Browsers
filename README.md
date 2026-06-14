@@ -68,51 +68,6 @@ Allow camera permission
 Show your hand to the camera!
 
 
-💻 **How It Works**
-
-Gesture Detection Algorithm
-
-┌─────────────────────────────────────────────┐
-│           Frame Capture (25 FPS)            │
-└──────────────────┬──────────────────────────┘
-                   ▼
-┌─────────────────────────────────────────────┐
-│         Skin Pixel Detection                │
-│  • Check RGB values                         │
-│  • Apply skin color ranges                  │
-│  • Filter non-skin pixels                   │
-│  • Sample every 3rd pixel for speed         │
-└──────────────────┬──────────────────────────┘
-                   ▼
-┌─────────────────────────────────────────────┐
-│         Bounding Box Analysis               │
-│  • Find hand boundaries                     │
-│  • Calculate aspect ratio                   │
-│  • Compute pixel density                    │
-└──────────────────┬──────────────────────────┘
-                   ▼
-┌─────────────────────────────────────────────┐
-│         Gap Detection                       │
-│  • Split top region into columns            │
-│  • Count pixels in each column              │
-│  • Identify gaps between fingers            │
-└──────────────────┬──────────────────────────┘
-                   ▼
-┌─────────────────────────────────────────────┐
-│         Gesture Classification              │
-│  ✌️ Peace: 2-3 gaps + specific aspect ratio │
-│  🖐️ Palm:  4+ gaps OR wide aspect + low     │
-│             density                         │
-└──────────────────┬──────────────────────────┘
-                   ▼
-┌─────────────────────────────────────────────┐
-│         Action Trigger                      │
-│  • Wait for 3 stable frames                 │
-│  • Hold duration: 500ms                     │
-│  • Execute YouTube action                   │
-└─────────────────────────────────────────────┘
-
-
 
 
 
