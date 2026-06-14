@@ -73,11 +73,11 @@ Show your hand to the camera!
 Gesture Detection Algorithm
 
 ┌─────────────────────────────────────────────┐
-│           Frame Capture (25 FPS)             │
+│           Frame Capture (25 FPS)            │
 └──────────────────┬──────────────────────────┘
                    ▼
 ┌─────────────────────────────────────────────┐
-│         Skin Pixel Detection                 │
+│         Skin Pixel Detection                │
 │  • Check RGB values                         │
 │  • Apply skin color ranges                  │
 │  • Filter non-skin pixels                   │
@@ -85,28 +85,28 @@ Gesture Detection Algorithm
 └──────────────────┬──────────────────────────┘
                    ▼
 ┌─────────────────────────────────────────────┐
-│         Bounding Box Analysis                │
+│         Bounding Box Analysis               │
 │  • Find hand boundaries                     │
 │  • Calculate aspect ratio                   │
 │  • Compute pixel density                    │
 └──────────────────┬──────────────────────────┘
                    ▼
 ┌─────────────────────────────────────────────┐
-│         Gap Detection                        │
+│         Gap Detection                       │
 │  • Split top region into columns            │
 │  • Count pixels in each column              │
 │  • Identify gaps between fingers            │
 └──────────────────┬──────────────────────────┘
                    ▼
 ┌─────────────────────────────────────────────┐
-│         Gesture Classification               │
+│         Gesture Classification              │
 │  ✌️ Peace: 2-3 gaps + specific aspect ratio │
 │  🖐️ Palm:  4+ gaps OR wide aspect + low     │
-│             density                          │
+│             density                         │
 └──────────────────┬──────────────────────────┘
                    ▼
 ┌─────────────────────────────────────────────┐
-│         Action Trigger                       │
+│         Action Trigger                      │
 │  • Wait for 3 stable frames                 │
 │  • Hold duration: 500ms                     │
 │  • Execute YouTube action                   │
