@@ -37,7 +37,7 @@
 
 1. **Download the project**
    ```bash
-   git clone https://github.com/Udaypatil9027/YouTube_Extension_For_Any_Browser
+   https://github.com/Udaypatil9027/YouTube_Extension_Project_Any_Browsers
 2 **Open Chrome Extensions**
 
 text
